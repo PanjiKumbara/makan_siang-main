@@ -82,7 +82,7 @@ class _RegisterState extends State<Register> {
                 border: InputBorder.none,
                 contentPadding: EdgeInsets.only(top: 11),
                 prefixIcon: Icon(
-                  Icons.water_damage,
+                  Icons.home,
                   color: Colors.blue,
                 ),
                 hintText: 'Nama Kelas',

@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:makan_siang/page/beranda/jadwal.dart';
 import 'package:makan_siang/page/beranda/makanan.dart';
 import 'package:makan_siang/page/chat.dart';
-import 'package:makan_siang/widgets/search_field.dart';
 
 class Beranda extends StatefulWidget {
   const Beranda({super.key});

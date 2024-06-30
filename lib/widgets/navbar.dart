@@ -16,8 +16,8 @@ class _NavBarState extends State<NavBar> {
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text('Panji Kumbara'),
-            accountEmail: Text('kasirunpanji@gmail.com'),
+            accountName: Text('Memei'),
+            accountEmail: Text('Memei@gmail.com'),
             decoration: BoxDecoration(color: Colors.blue),
           ),
           ListTile(
