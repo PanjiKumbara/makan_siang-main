@@ -10,12 +10,12 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  Widget buildNisn() {
+  Widget buildEmail() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          'NISN',
+          'Email',
           style: TextStyle(
               color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
         ),
@@ -31,16 +31,15 @@ class _LoginState extends State<Login> {
               ]),
           height: 60,
           child: TextField(
-            keyboardType: TextInputType.number,
             style: TextStyle(color: Colors.black87),
             decoration: InputDecoration(
                 border: InputBorder.none,
                 contentPadding: EdgeInsets.only(top: 11),
                 prefixIcon: Icon(
-                  Icons.account_circle_rounded,
+                  Icons.mail_outline,
                   color: Colors.blue,
                 ),
-                hintText: 'Nomor Induk Siswa',
+                hintText: 'Email',
                 hintStyle: TextStyle(color: Colors.black38)),
           ),
         )
@@ -166,7 +165,7 @@ class _LoginState extends State<Login> {
                             fontWeight: FontWeight.bold),
                       ),
                       SizedBox(height: 50),
-                      buildNisn(),
+                      buildEmail(),
                       SizedBox(height: 20),
                       buildPassword(),
                       buildLupaPass(),

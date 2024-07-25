@@ -7,26 +7,24 @@ class Info extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Info Pengembang'),
-        automaticallyImplyLeading: false,
+        title: const Text(
+          'Info Pengembang',
+          style: TextStyle(color: Colors.white),
+        ),
+        iconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Color.fromARGB(255, 33, 150, 243),
+        automaticallyImplyLeading: true,
+        elevation: 0,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Panji K - Front-End Engineer \n Rully H - Back-End Engineer \n M. Faisal - QA Engineer',
+              'Panji Kumbara\nRully Hidayatullah\nMuhammad Faizal',
               style: TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 100), // Add some spacing
-            ElevatedButton(
-              onPressed: () => Navigator.pushReplacement(
-                  context, (MaterialPageRoute(builder: (context) => Home()))),
-              child: const Text(
-                'Kembali',
-                style: TextStyle(color: Colors.red),
-              ), // Customize button text
-            ),
           ],
         ),
       ),

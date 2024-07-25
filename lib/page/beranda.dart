@@ -34,7 +34,7 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(10.0),
         child: Center(
           child: Wrap(
             spacing: 30.0,
@@ -83,8 +83,8 @@ class Body extends StatelessWidget {
     required String label,
   }) {
     return SizedBox(
-      width: 160.0,
-      height: 160.0,
+      width: 140.0,
+      height: 140.0,
       child: InkWell(
         onTap: onTap,
         child: Card(

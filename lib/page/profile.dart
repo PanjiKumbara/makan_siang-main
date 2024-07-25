@@ -13,7 +13,7 @@ class Profile extends StatelessWidget {
       child: Scaffold(
         key: _scaffoldKey,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(130),
+          preferredSize: Size.fromHeight(65),
           child: AppBar(
             title: Padding(
               padding: const EdgeInsets.only(top: 20.0), // Add margin on top
@@ -42,7 +42,7 @@ class Profile extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(children: [
-            const SizedBox(height: 40),
+            const SizedBox(height: 20),
             CircleAvatar(
               radius: 70,
               backgroundImage: AssetImage('assets/OIP (2).jpeg'),

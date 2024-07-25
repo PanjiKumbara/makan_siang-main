@@ -51,7 +51,7 @@ class _UbahProfileState extends State<UbahProfile> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          'Password',
+          'Password Lama',
           style: TextStyle(
               color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
         ),
@@ -76,7 +76,45 @@ class _UbahProfileState extends State<UbahProfile> {
                   Icons.lock,
                   color: Colors.blue,
                 ),
-                hintText: 'Password',
+                hintText: 'Password Lama',
+                hintStyle: TextStyle(color: Colors.black38)),
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget buildPasswordBaru() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Text(
+          'Password Baru',
+          style: TextStyle(
+              color: Colors.blue, fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        SizedBox(height: 10),
+        Container(
+          alignment: Alignment.centerLeft,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.black26, blurRadius: 6, offset: Offset(0, 2))
+              ]),
+          height: 60,
+          child: TextField(
+            obscureText: true,
+            style: TextStyle(color: Colors.black87),
+            decoration: InputDecoration(
+                border: InputBorder.none,
+                contentPadding: EdgeInsets.only(top: 11),
+                prefixIcon: Icon(
+                  Icons.lock,
+                  color: Colors.blue,
+                ),
+                hintText: 'Password Baru',
                 hintStyle: TextStyle(color: Colors.black38)),
           ),
         )
@@ -129,10 +167,10 @@ class _UbahProfileState extends State<UbahProfile> {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
+                      Colors.blue.shade100,
                       Colors.white,
                       Colors.white,
-                      Colors.white,
-                      Colors.white,
+                      Colors.blue,
                     ])),
                 child: SingleChildScrollView(
                   physics: AlwaysScrollableScrollPhysics(),
@@ -147,10 +185,12 @@ class _UbahProfileState extends State<UbahProfile> {
                             fontSize: 40,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(height: 100),
+                      SizedBox(height: 30),
                       buildEmail(),
                       SizedBox(height: 20),
                       buildPassword(),
+                      SizedBox(height: 20),
+                      buildPasswordBaru(),
                       buildSimpanBtn(),
                       buildBatalBtn()
                     ],
